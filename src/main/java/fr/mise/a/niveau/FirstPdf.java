@@ -53,29 +53,24 @@ public class FirstPdf {
   // Reader
   // under File -> Properties
   static void addMetaData(Document document) {
-    document.addTitle("My first PDF");
-    document.addSubject("Using iText");
-    document.addKeywords("Java, PDF, iText");
-    document.addAuthor("Olivier Barais");
-    document.addCreator("Olivier Barais");
+    document.addTitle("PDF de test");
+    document.addSubject("Un PDF généré depuis des lignes de code !");
+    document.addKeywords("Java, PDF");
+    document.addAuthor("Tanguy Franchet");
+    document.addCreator("Tanguy Franchet");
   }
 
 
   // iText allows to add metadata to the PDF which can be viewed in your Adobe
   // Reader
   // under File -> Properties
-  static void addMetaDaata(Document document) {
-    document.addTitle("My first PDF");
-    document.addSubject("Using iText");
-    document.addKeywords("Java, PDF, iText");
-    document.addAuthor("Olivier Barais");
-    document.addCreator("Olivier Barais");
-  }
 
   static void addTitlePage(Document document)
       throws DocumentException {
     Paragraph preface = new Paragraph();
     // We add one empty line
+    addEmptyLine(preface, 1);
+    addEmptyLine(preface, 1);
     addEmptyLine(preface, 1);
     // Lets write a big header
     preface.add(new Paragraph("Title of the document", catFont));
