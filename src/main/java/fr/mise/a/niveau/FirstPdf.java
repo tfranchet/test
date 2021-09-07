@@ -69,9 +69,7 @@ public class FirstPdf {
       throws DocumentException {
     Paragraph preface = new Paragraph();
     // We add one empty line
-    addEmptyLine(preface, 1);
-    addEmptyLine(preface, 1);
-    addEmptyLine(preface, 1);
+    addEmptyLine(preface, 3);
     // Lets write a big header
     preface.add(new Paragraph("Title of the document", catFont));
 
